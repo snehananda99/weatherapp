@@ -92,7 +92,7 @@ margin-top: 50px;
     margin-top: 10px;
     display: none;
 }
-@media only screen and (max-width: 433px) {
+/* @media only screen and (max-width: 433px) {
     .search {
         flex-direction: column;
         align-items: stretch;
@@ -108,6 +108,24 @@ margin-top: 50px;
         border-radius: 50%;
         padding: auto;
     }
-}
+} */
     
+@media only screen and (max-width: 433px) {
+    .search {
+        flex-direction: row; /* Change flex-direction to row */
+        align-items: center;
+        justify-content: space-between; /* Add space between input and button */
+    }
+
+    .search input {
+        width: calc(100% - 50px); /* Adjust input width to fit available space */
+        margin-bottom: 0; /* Remove margin-bottom */
+    }
+
+    .search button {
+        width: 40px; /* Set fixed width for the button */
+        height: 40px; /* Set fixed height for the button */
+        border-radius: 50%; /* Make the button circular */
+        padding: 0; /* Remove padding */
+    }
 }
