@@ -20,7 +20,7 @@
             <p>Invalid city name</p>
         </div>
         <div class="weather">
-            <img src="./assets/img/weather-icon.png" alt="weather" class="weather-icon mb-2">
+            <img src="./assets/img/misss.png" alt="weather" class="weather-icon mb-2">
             <h1 class="temp">22°c</h1>
             <h2 class="city">New York</h2>
             <div class="details">
@@ -64,24 +64,24 @@
                 document.querySelector(".humidity").innerHTML = data.main.humidity + "%";
                 document.querySelector(".wind").innerHTML = data.wind.speed + " km/h";
 
-                if (data.weather[0].main == "Clouds") {
-                    weatherIcon.src = "./assets/img/cd.jpeg"
-                }
-                else if (data.weather[0].main == "Rain") {
-                    weatherIcon.src = "./assets/img/weather-icon.png"
-                }
-                else if (data.weather[0].main == "Clear") {
-                    weatherIcon.src = "./assets/img/clears.png"
-                }
-                else if (data.weather[0].main == "Drizzle") {
-                    weatherIcon.src = "./assets/img/drizzle.jpeg"
-                }
-                else if (data.weather[0].main == "Mist") {
-                    weatherIcon.src = "./assets/img/mist-d.webp"
-                }
-                else if (data.weather[0].main == "Snow") {
-                    weatherIcon.src = "./assets/img/snow.jpeg"
-                }
+                // if (data.weather[0].main == "Clouds") {
+                //     weatherIcon.src = "./assets/img/cd.jpeg"
+                // }
+                // else if (data.weather[0].main == "Rain") {
+                //     weatherIcon.src = "./assets/img/weather-icon.png"
+                // }
+                // else if (data.weather[0].main == "Clear") {
+                //     weatherIcon.src = "./assets/img/clears.png"
+                // }
+                // else if (data.weather[0].main == "Drizzle") {
+                //     weatherIcon.src = "./assets/img/drizzle.jpeg"
+                // }
+                // else if (data.weather[0].main == "Mist") {
+                //     weatherIcon.src = "./assets/img/mist-d.webp"
+                // }
+                // else if (data.weather[0].main == "Snow") {
+                //     weatherIcon.src = "./assets/img/snow.jpeg"
+                // }
 
                 document.querySelector(".weather").style.display = "block";
                 document.querySelector(".error").style.display = "none";
